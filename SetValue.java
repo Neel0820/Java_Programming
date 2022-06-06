@@ -28,9 +28,7 @@ public class SetValue {
 		secondNumber = firstNumber + 2;
 	}
 
-	/*
-	 * This main method is for uses of display method
-	 */
+	// This main method is for uses of display method
 	public static void main(String[] args) {
 		display(23);
 	}

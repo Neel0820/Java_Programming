@@ -7,7 +7,7 @@ package corejava;
  * @author macbook
  *
  */
-public class Break {
+public class Skip {
 
 	/*
 	 * This method is for

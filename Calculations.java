@@ -16,8 +16,7 @@ public class Calculations {
 	 * using constructor
 	 */
 	public Calculations() {
-
-		// this variable is for store the value of addition of both number
+		// This variable is for store the value of addition of both number
 		int subtraction = firstNumber - secondNumber;
 		System.out.println("Subtraction of both number is : " + subtraction);
 	}
@@ -28,8 +27,7 @@ public class Calculations {
 	 * using parameterized constructor
 	 */
 	public Calculations(int firstNumber, int secondNumber) {
-
-		// this variable is for store the value of addition of both number
+		// This variable is for store the value of addition of both number
 		int addition = firstNumber + secondNumber;
 		System.out.println("Addition of both number is : " + addition);
 	}
@@ -38,7 +36,7 @@ public class Calculations {
 	 * This is the main method uses of constructor method.
 	 */
 	public static void main(String[] args) {
-		Calculations calculation = new Calculations(20, 12);
+		new Calculations(20, 12);
 	}
 
 }

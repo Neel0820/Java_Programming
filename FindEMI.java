@@ -14,27 +14,24 @@ public class FindEMI {
 	 * calculate EMI
 	 */
 	public static void main(String[] args) {
-		double principalAmount;
-		float rate;
-		int time;
-
-		Scanner sc = new Scanner(System.in);
+		Scanner scanner = new Scanner(System.in);
 		System.out.println("Enter principal amount : ");
-		principalAmount = sc.nextInt();// get input for principalAmount
+		double principalAmount = scanner.nextInt();// Get input for principalAmount
 
 		System.out.println("Enter rate of intrest : ");
-		rate = sc.nextFloat();// get input for rate
+		float rate = scanner.nextFloat(); // Get input for rate
 
 		System.out.println("Enter number of monthly instalments : ");
-		time = sc.nextInt();// get input for time
+		int time = scanner.nextInt(); // Get input for time
 
-		sc.close();
+		scanner.close();
 
-		rate=rate/(12*100);// for find rate of interest per annum
+		rate = rate / (12 * 100); // For find rate of interest per annum
 
-		time=time*12;// for find time in year
+		time = time * 12; // For find time in year
 
-		double emi = (double)(principalAmount*rate*Math.pow(1+rate,time))/(Math.pow(1+rate,time)-1);
+		// For EMI calculation
+		double emi = (double) (principalAmount * rate * Math.pow (1+rate, time) ) / (Math.pow (1 + rate, time) - 1);
 
 		System.out.println("EMI is : " + emi);
 	}

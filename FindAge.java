@@ -15,17 +15,14 @@ public class FindAge {
 	public void findAge(int age) {
 		int ageLimit = 50;
 
-		if (age > ageLimit) {
+		if (age > ageLimit) { // If for (age > ageLimit)
 			System.out.println("Your are older");
-		}// end if for age > ageLimit
-		else {
+		} else { // Else for main if
 			System.out.println("Your are younger");
-		}// end of else
+		}
 	}
 
-	/*
-	 * This is the main method uses of findAge(int) method.
-	 */
+	// This is the main method uses of findAge(int) method.
 	public static void main(String[] args) {
 		FindAge findage = new FindAge();
 		findage.findAge(23);

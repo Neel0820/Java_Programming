@@ -17,8 +17,8 @@ public class PrintNumbers {
 		do {
 			System.out.println(+ i);
 			i++;
-		}// end of do statement
-		while (i <= 10);// end of while statement
+		}// End of do statement
+		while (i <= 10);// End of while statement
 	}
 
 }

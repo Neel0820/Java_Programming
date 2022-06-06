@@ -7,7 +7,7 @@ import java.util.Scanner;
  * compare two value 
  * @author macbook
  */
-public class CompareNumbers {
+public class Compare {
 
 	/*
 	 * This method is for
@@ -18,21 +18,20 @@ public class CompareNumbers {
 		Integer firstNumber;
 		Integer secondNumber;
 
-		Scanner sc = new Scanner(System.in);
+		Scanner scanner = new Scanner(System.in);
 		System.out.println("Enter value of first number : ");
-		firstNumber = sc.nextInt();// get input for firstNumber
+		firstNumber = scanner.nextInt();// Get input for firstNumber
 
 		System.out.println("Enter value of second number : ");
-		secondNumber = sc.nextInt();// get input for secondNumber
+		secondNumber = scanner.nextInt();// Get input for secondNumber
 
-		sc.close();
+		scanner.close();
 
-		if (firstNumber.equals(secondNumber)) {
+		if (firstNumber.equals(secondNumber)) { // Main if
 			System.out.println("Given numbers are equal ");
-		}// end main if
-		else {
+		}else { // Main else
 			System.out.println("Given numbers are different");
-		}// end main else
+		}
 	}
 
 }
