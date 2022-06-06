@@ -17,7 +17,7 @@ public class Map {
 	public static void main(String[] args) {
 		HashMap<Integer, String> map = new HashMap<Integer, String>();
 
-		// for add data in map type of HashMap
+		// For add data in map type of HashMap
 		map.put(1, "Hello");
 		map.put(2, "world");
 		map.put(3, "Neel");

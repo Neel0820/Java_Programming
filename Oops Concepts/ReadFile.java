@@ -17,8 +17,7 @@ public class ReadFile {
 	 * using scanner class
 	 */
 	public static void main(String[] args) {
-		// This try block is for handle FileNotFoundException 
-		try {
+		try { // This try block is for handle FileNotFoundException 
 			File Obj = new File("myTestFile.text");
 			Scanner Reader = new Scanner(Obj);
 			while (Reader.hasNextLine()) {
@@ -26,9 +25,7 @@ public class ReadFile {
 				System.out.println(data);
 			}
 			Reader.close();
-		}
-		// This catch is for handle exception throw by try block
-		catch (FileNotFoundException e) {
+		} catch (FileNotFoundException e) { // This catch is for handle exception throw by try block
 			System.out.println("An error has occurred.");
 			e.printStackTrace();
 		}

@@ -19,7 +19,7 @@ public class RemoveDuplicate {
 	public static void main(String[] args) {
 		ArrayList<String> list = new ArrayList<String>();
 
-		// for add value in list
+		// For add value in list
 		list.add("A");
 		list.add("B");
 		list.add("C");
@@ -32,10 +32,10 @@ public class RemoveDuplicate {
 
 		System.out.println("All value in list : " + list);
 
-		//for remove duplicate value
+		// For remove duplicate value
 		List<String> listWithoutDuplicates = list.stream().distinct().collect(Collectors.toList());
 
-        System.out.println("List after duplicate value removal :" + listWithoutDuplicates);
+		System.out.println("List after duplicate value removal :" + listWithoutDuplicates);
 	}
 
 }

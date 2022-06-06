@@ -11,28 +11,26 @@ abstract class Area {
 	 * This method is abstract method
 	 * for override in child class
 	 */
-	abstract void findarea(double radius);
+	abstract void findArea(double radius);
 }
 
-// extends the Area class
+// Extends the Area class
 class FindArea extends Area{
 
 	/*
-	 * This method is for find the area of circle
+	 * This method is for find the area of circle.
 	 * It's implement by extended class
 	 */
 	@Override
-	public void findarea(double radius) {
+	public void findArea(double radius) {
 		final double pi = 3.14;
 
 		double area = (pi * radius * radius);
 		System.out.println("Area of circle : " + area);
 	}
 
-	/*
-	 * This method is for find the area of rectangle
-	 */
-	public void findarea(double length, double width) {
+	// This method is for find the area of rectangle
+	public void findArea(double length, double width) {
 		double area = (length * width);
 		System.out.println("Area of rectangle : " + area);
 	}
@@ -41,13 +39,11 @@ class FindArea extends Area{
 
 public class DisplayArea {
 
-	/*
-	 * This is main method uses for findarea()
-	 */
+	// This is main method uses for findArea()
 	public static void main(String[] args) {
 		FindArea area = new FindArea();
-		area.findarea(5);
-		area.findarea(5, 7);
+		area.findArea(5);
+		area.findArea(5, 7);
 	}
 
 }

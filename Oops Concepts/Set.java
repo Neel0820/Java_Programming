@@ -17,7 +17,7 @@ public class Set {
 	public static void main(String[] args) {
 		HashSet<String> set = new HashSet<String>();
 
-		// for add data in set type of HashSet
+		// For add data in set type of HashSet
 		set.add("Hello");
 		set.add("world");
 		set.add("Neel");

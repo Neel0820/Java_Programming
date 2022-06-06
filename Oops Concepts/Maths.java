@@ -13,16 +13,12 @@ public class Maths {
 	 * divide any number by zero
 	 */
 	public static void main(String args[]) {
-		int val1, val2;
-		
-		//this block will contain statements that may raise exceptions
+		// This block will contain statements that may raise exceptions
 		try {
-			val1 = 0;
-			val2 = 25 / val1;
-			System.out.println(val2);
-		}
-		//handler for ArithmeticException
-		catch (ArithmeticException e) { 
+			int value1 = 0;
+			int value2 = 25 / value1;
+			System.out.println(value2);
+		} catch (ArithmeticException e) { // Handler for ArithmeticException
 			System.out.println("ArithmeticException ::Can't divide by Zero!!");
 		}
 	}

@@ -16,8 +16,8 @@ interface Triangle {
 class AreaOfTriangle implements Triangle {
 
 	/*
-	 * This method is for 
-	 * find the area og tringle
+	 * This method is for
+	 * find the area of triangle
 	 */
 	public void fingArea(double hight, double base) {
 		double area = ((hight * base) / 2);

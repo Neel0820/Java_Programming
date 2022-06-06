@@ -14,21 +14,19 @@ abstract class Method {
 	//This is abstract method
 	abstract void calculate();
 
-	/*
-	 * This method is for get value of variable
-	 */
+	// This method is for get value of variable
 	public void getValue() {
 		@SuppressWarnings("resource")
 		Scanner scanner = new Scanner(System.in);
 		System.out.println("Enter the value of first variable : ");
-		firstNumber = scanner.nextInt();// this is for get value for firstNumber
+		firstNumber = scanner.nextInt();// This is for get value for firstNumber
 		System.out.println("Enter the value of second variable : ");
-		secondNumber = scanner.nextInt();// this is for get value for secondNumber
+		secondNumber = scanner.nextInt();// This is for get value for secondNumber
 	}
 
 }
 
-// extends the Method class
+// Extends the Method class
 class Addition extends Method {
 
 	/*
@@ -43,6 +41,7 @@ class Addition extends Method {
 
 }
 
+//Extends the Method class
 class Subtraction extends Method {
 
 	/*
@@ -59,9 +58,7 @@ class Subtraction extends Method {
 
 public class Calculation {
 
-	/*
-	 * This method is of uses for calculate 
-	 */
+	// This method is of uses for calculate
 	public static void main(String[] args) {
 		Method addition = new Addition();
 		addition.getValue();

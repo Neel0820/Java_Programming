@@ -1,13 +1,14 @@
 package oopsconcept;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
 
 /**
  * This program is for
  * compare movie data stored in list
  * using comparable and comparator
  * @author macbook
- *
  */
 class Movie implements Comparable<Movie> {
 
@@ -75,7 +76,7 @@ public class MovieComaprison {
 	 */
 	public static void main(String[] args) {
 		ArrayList<Movie> list = new ArrayList<Movie>();
-		
+
 		// For add data about movie in list
 		list.add(new Movie("Force Awakens", 8.3, 2015));
 		list.add(new Movie("Star Wars", 8.7, 1977));

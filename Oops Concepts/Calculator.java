@@ -11,11 +11,9 @@ class Number {
 	int firstNumber;
 	int secondNumber;
 
-	/*
-	 * This method is for get value of variable
-	 */
+	// This method is for get value of variable
+	@SuppressWarnings("resource")
 	public void getValue() {
-		@SuppressWarnings("resource")
 		Scanner scanner = new Scanner(System.in);
 		System.out.println("Enter the value of first variable : ");
 		firstNumber = scanner.nextInt();// this is for get value for firstNumber
@@ -25,7 +23,7 @@ class Number {
 
 }
 
-// extends the Number class
+// Extends the Number class
 class Multipliction extends Number {
 
 	/*
@@ -39,7 +37,7 @@ class Multipliction extends Number {
 
 }
 
-// extends the Number class
+// Extends the Number class
 class Division extends Number {
 
 	/*
@@ -52,12 +50,10 @@ class Division extends Number {
 
 }
 
-// extends the Division class
+// Extends the Division class
 class Display extends Division {
 
-	/*
-	 * This method is for display the result of division
-	 */
+	// This method is for display the result of division
 	public void display() {
 		System.out.println("Division of both number : " + calculate());
 	}
@@ -66,9 +62,7 @@ class Display extends Division {
 
 public class Calculator {
 
-	/*
-	 * This method is of uses for calculate 
-	 */
+	// This method is of uses for calculate
 	public static void main(String[] args) {
 		Multipliction multiplication = new Multipliction();
 		multiplication.getValue();
