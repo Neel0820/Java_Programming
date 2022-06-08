@@ -1,6 +1,7 @@
 package oopsconcept;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 
 /**
  * This program is for
@@ -22,7 +23,12 @@ public class List {
 		list.add("world");
 		list.add("Neel");
 
-		System.out.println("List element : " + list);
+		// Use iterator method for print list
+		Iterator<String> iterator = list.iterator();
+
+		while (iterator.hasNext()) { // While loop for print all element of list
+			System.out.println("List element : " + iterator.next());
+		}
 	}
 
 }

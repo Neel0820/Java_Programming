@@ -1,6 +1,7 @@
 package oopsconcept;
 
 import java.util.HashSet;
+import java.util.Iterator;
 
 /**
  * This program for
@@ -22,7 +23,12 @@ public class Set {
 		set.add("world");
 		set.add("Neel");
 
-		System.out.println("Data in set : " + set);
+		// Use iterator method for print set
+		Iterator<String> iterator = set.iterator();
+
+		while (iterator.hasNext()) { // While loop for print all element of set
+			System.out.println("Set element : " + iterator.next());
+		}
 	}
 
 }

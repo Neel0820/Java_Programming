@@ -1,6 +1,8 @@
 package oopsconcept;
 
 import java.util.HashMap;
+import java.util.Iterator;
+import java.util.Map.Entry;
 
 /**
  * This program for
@@ -22,7 +24,13 @@ public class Map {
 		map.put(2, "world");
 		map.put(3, "Neel");
 
-		System.out.println("Data in map : " + map);
+		// Use iterator method for print map
+		Iterator<Entry<Integer, String>> iterator = map.entrySet().iterator();
+
+		while (iterator.hasNext()) { // While loop for print all element of list
+			Entry<Integer, String> entry = iterator.next();
+			System.out.println("Map element : Key - " + entry.getKey() + " Value - " + entry.getValue());
+		}
 	}
 
 }
