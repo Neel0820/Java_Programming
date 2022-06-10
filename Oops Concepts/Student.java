@@ -15,7 +15,7 @@ class GetData {
 		return rollNumber;
 	}
 
-	// set method for rollnumber
+	// set method for rollNumber
 	public void setRollNumber(int rollNumber) {
 		this.rollNumber = rollNumber;
 	}
@@ -49,7 +49,7 @@ public class Student {
 
 		GetData data = new GetData();
 
-		// for set data
+		// For set data
 		data.setRollNumber(1);
 		data.setName("Neel");
 		data.setAge(21);

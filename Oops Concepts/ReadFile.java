@@ -16,18 +16,18 @@ public class ReadFile {
 	 * read data from file
 	 * using scanner class
 	 */
-	public static void main(String[] args) {
-		try { // This try block is for handle FileNotFoundException 
-			File Obj = new File("myTestFile.text");
-			Scanner Reader = new Scanner(Obj);
-			while (Reader.hasNextLine()) {
-				String data = Reader.nextLine();
+	public static void main(String[] args) throws FileNotFoundException {
+		File Obj = new File("myTestFile.text");
+		Scanner scanner = new Scanner(Obj);
+
+		try { // This try block is for handle FileNotFoundException
+			while (scanner.hasNextLine()) {
+				String data = scanner.nextLine();
 				System.out.println(data);
 			}
-			Reader.close();
-		} catch (FileNotFoundException e) { // This catch is for handle exception throw by try block
+		} finally { // This catch is for handle exception throw by try block
 			System.out.println("An error has occurred.");
-			e.printStackTrace();
+			scanner.close();
 		}
 	}
 

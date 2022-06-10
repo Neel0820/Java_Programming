@@ -16,9 +16,9 @@ public class Pattern {
 		for (int i = 1; i <= 5; i++) {
 			for (int j = 1; j <= i; j++) {
 				System.out.print("* ");
-			}// End of sub for loop
+			} // End of sub for loop
 			System.out.println("");
-		}// End of main for loop
+		} // End of main for loop
 	}
 
 }

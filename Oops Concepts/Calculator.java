@@ -12,13 +12,18 @@ class Number {
 	int secondNumber;
 
 	// This method is for get value of variable
-	@SuppressWarnings("resource")
 	public void getValue() {
 		Scanner scanner = new Scanner(System.in);
+
+		try { // This try block is for handle exception
 		System.out.println("Enter the value of first variable : ");
-		firstNumber = scanner.nextInt();// this is for get value for firstNumber
+		firstNumber = scanner.nextInt(); // This is for get value for firstNumber
+
 		System.out.println("Enter the value of second variable : ");
-		secondNumber = scanner.nextInt();// this is for get value for secondNumber
+		secondNumber = scanner.nextInt(); // This is for get value for secondNumber
+		} finally { // This finally block Handle finally clause
+			scanner.close();
+		}
 	}
 
 }

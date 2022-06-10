@@ -18,7 +18,7 @@ public class List {
 	public static void main(String[] args) {
 		ArrayList<String> list = new ArrayList<String>();
 
-		// for add data in list
+		// For add data in list
 		list.add("Hello");
 		list.add("world");
 		list.add("Neel");

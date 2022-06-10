@@ -23,9 +23,7 @@ public class Addition {
 		System.out.println("Addition of this numbers : " + addition);
 	}
 
-	/*
-	 * This main method is for uses of constructor
-	 */
+	// This main method is for uses of constructor
 	public static void main(String[] args) {
 		Addition addition = new Addition();
 		addition.addition(12, 15);

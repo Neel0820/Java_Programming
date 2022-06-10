@@ -35,7 +35,7 @@ public class RemoveDuplicate {
 		// For remove duplicate value
 		List<String> listWithoutDuplicates = list.stream().distinct().collect(Collectors.toList());
 
-		System.out.println("List after duplicate value removal :" + listWithoutDuplicates);
+		System.out.println("List after duplicate value removal : " + listWithoutDuplicates);
 	}
 
 }

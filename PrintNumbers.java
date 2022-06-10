@@ -14,11 +14,10 @@ public class PrintNumbers {
 	 */
 	public static void main(String[] args) {
 		int i = 1;
-		do {
+		do { // Do statement for execute condition
 			System.out.println(+ i);
 			i++;
-		}// End of do statement
-		while (i <= 10);// End of while statement
+		} while (i <= 10); // While statement for check condition
 	}
 
 }

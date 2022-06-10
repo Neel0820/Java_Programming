@@ -17,11 +17,15 @@ public class StringOperation {
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
 		System.out.println("Enter String : ");
-		String myString = scanner.nextLine();// Get value of myString
+		String myString = scanner.nextLine(); // Get value of myString
 
+		String concatString;
+		int position;
+
+		try { // This try block is for handle exception
 		System.out.println("Enter string you concatenate with " + myString + " : ");
-		String concatString = scanner.nextLine();// Get value of concatString
-
+		concatString = scanner.nextLine(); // Get value of concatString
+		
 		// This is for concatenate two string
 		System.out.println("String after concatenate : " + myString.concat(concatString));
 
@@ -30,18 +34,20 @@ public class StringOperation {
 
 		// This is for check the character at particular position
 		System.out.println("Enetr the position where you check the character : ");
-		int position = scanner.nextInt();// For get the value of position
+		position = scanner.nextInt(); // For get the value of position
 
-		scanner.close();
+		} finally { // This finally block Handle finally clause
+			scanner.close();
+		}
 
 		if (position <= myString.length() && position > 0) { // Main if part
 			System.out.println("Character at given " + position + " position : " + myString.charAt(position));
-		}else { // Main else part
+		} else { // Main else part
 			System.out.println("Entered position is out of rang");
 		}
 
 		// This is for check the end of string
-		System.out.println("After check the of string : " + myString.endsWith("l"));
+		System.out.println("After check the string : " + myString.endsWith("l"));
 	}
 
 }

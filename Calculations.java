@@ -32,9 +32,7 @@ public class Calculations {
 		System.out.println("Addition of both number is : " + addition);
 	}
 
-	/*
-	 * This is the main method uses of constructor method.
-	 */
+	// This is the main method uses of constructor method.
 	public static void main(String[] args) {
 		new Calculations(20, 12);
 	}

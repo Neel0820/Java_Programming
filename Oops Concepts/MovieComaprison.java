@@ -41,7 +41,7 @@ class Movie implements Comparable<Movie> {
 
 }
 
-//Class to compare Movies by ratings
+// Class to compare Movies by ratings
 class RatingCompare implements Comparator<Movie> {
 
 	public int compare(Movie movie1, Movie movie2) {
@@ -58,7 +58,7 @@ class RatingCompare implements Comparator<Movie> {
 
 }
 
-//Class to compare Movies by name
+// Class to compare Movies by name
 class NameCompare implements Comparator<Movie> {
 
 	public int compare(Movie movie1, Movie movie2) {
@@ -88,7 +88,7 @@ public class MovieComaprison {
 		RatingCompare ratingCompare = new RatingCompare();
 		Collections.sort(list, ratingCompare);
 
-		for (Movie movie: list) {
+		for (Movie movie : list) {
 			System.out.println(movie.getRating() + " " + movie.getName() + " " + movie.getYear());			
 		}
 
@@ -97,7 +97,7 @@ public class MovieComaprison {
 		NameCompare nameCompare = new NameCompare();
 		Collections.sort(list, nameCompare);
 
-		for (Movie movie: list) {
+		for (Movie movie : list) {
 			System.out.println(movie.getName() + " " + movie.getRating() + " " + movie.getYear());
 		}
 
@@ -105,7 +105,7 @@ public class MovieComaprison {
 		System.out.println("\nSorted by year");
 		Collections.sort(list);
 
-		for (Movie movie: list) {
+		for (Movie movie : list) {
 			System.out.println(movie.getYear() + " " + movie.getRating() + " " + movie.getName()+" ");
 		}
 	}

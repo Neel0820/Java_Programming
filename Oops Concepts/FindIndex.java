@@ -14,14 +14,19 @@ public class FindIndex {
 
 		System.out.println("Enetr the element of array : ");
 		Scanner scanner = new Scanner(System.in);
+
+		int element;
+
+		try { // This try block is for handle exception
 		for (int i = 0; i < 10; i++) {
 			list[i] = scanner.nextInt();
 		}
 
 		System.out.println("Enter element which index find : ");
-		int element = scanner.nextInt();
-
-		scanner.close();
+		element = scanner.nextInt();
+		} finally { // This finally block Handle finally clause
+			scanner.close();
+		}
 
 		int flag = -1;
 		for (int i = 0; i < list.length; i++) {

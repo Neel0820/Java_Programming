@@ -11,17 +11,22 @@ abstract class Method {
 	int firstNumber;
 	int secondNumber;
 
-	//This is abstract method
+	// This is abstract method
 	abstract void calculate();
 
 	// This method is for get value of variable
 	public void getValue() {
-		@SuppressWarnings("resource")
 		Scanner scanner = new Scanner(System.in);
+
+		try { // This try block is for handle exception
 		System.out.println("Enter the value of first variable : ");
-		firstNumber = scanner.nextInt();// This is for get value for firstNumber
+		firstNumber = scanner.nextInt(); // This is for get value for firstNumber
+
 		System.out.println("Enter the value of second variable : ");
-		secondNumber = scanner.nextInt();// This is for get value for secondNumber
+		secondNumber = scanner.nextInt(); // This is for get value for secondNumber
+		} finally { // This finally block Handle finally clause
+			scanner.close();
+		}
 	}
 
 }
@@ -41,7 +46,7 @@ class Addition extends Method {
 
 }
 
-//Extends the Method class
+// Extends the Method class
 class Subtraction extends Method {
 
 	/*
