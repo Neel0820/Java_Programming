@@ -20,12 +20,12 @@ public class ReadFile {
 		File Obj = new File("myTestFile.text");
 		Scanner scanner = new Scanner(Obj);
 
-		try { // This try block is for handle FileNotFoundException
+		try {
 			while (scanner.hasNextLine()) {
 				String data = scanner.nextLine();
 				System.out.println(data);
 			}
-		} finally { // This catch is for handle exception throw by try block
+		} finally {
 			System.out.println("An error has occurred.");
 			scanner.close();
 		}

@@ -20,10 +20,10 @@ public class Addition {
 		this.secondNumber = secondNumber;
 
 		int addition = firstNumber + secondNumber;
-		System.out.println("Addition of this numbers : " + addition);
+		System.out.println("Addition of this numbers: " + addition);
 	}
 
-	// This main method is for uses of constructor
+	// This main method is for use of constructor
 	public static void main(String[] args) {
 		Addition addition = new Addition();
 		addition.addition(12, 15);

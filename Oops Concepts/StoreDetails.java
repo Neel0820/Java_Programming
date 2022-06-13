@@ -18,12 +18,14 @@ public class StoreDetails {
 	public static void main(String[] args) throws IOException {
 		PrintWriter writer = new PrintWriter("myTestFile.text");
 
-		writer.println("Name : Neel Bhanderi");
-		writer.println("Date Of Birth : 09 Aug, 2000");
-		writer.println("Contact Number : +91 9081223547 / +91 9106827909");
-		writer.println("Address : Surat");
-
-		writer.close();
+		try {
+			writer.println("Name: Neel Bhanderi");
+			writer.println("Date Of Birth: 09 Aug, 2000");
+			writer.println("Contact Number: +91 9081223547 / +91 9106827909");
+			writer.println("Address: Surat");
+		} finally {
+			writer.close();
+		}
 
 		System.out.println ("File is created successfully with the content.");
 	}

@@ -18,8 +18,8 @@ public class Maths {
 			int value1 = 0;
 			int value2 = 25 / value1;
 			System.out.println(value2);
-		} catch (ArithmeticException e) { // Handler for ArithmeticException
-			System.out.println("ArithmeticException ::Can't divide by Zero!!");
+		} catch (ArithmeticException e) {
+			System.out.println("ArithmeticException::Can't divide by Zero!!");
 		}
 	}
 

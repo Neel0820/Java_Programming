@@ -10,32 +10,32 @@ class GetData {
 	private String name;
 	private int age;
 
-	// get method for rollNumber
+	// getter method for rollNumber
 	public int getRollNumber() {
 		return rollNumber;
 	}
 
-	// set method for rollNumber
+	// setter method for rollNumber
 	public void setRollNumber(int rollNumber) {
 		this.rollNumber = rollNumber;
 	}
 
-	// get method for name
+	// getter method for name
 	public String getName() {
 		return name;
 	}
 
-	// set method for name
+	// setter method for name
 	public void setName(String name) {
 		this.name = name;
 	}
 
-	// get method for age
+	// getter method for age
 	public int getAge() {
 		return age;
 	}
 
-	// set method for age
+	// setter method for age
 	public void setAge(int age) {
 		this.age = age;
 	}
@@ -44,9 +44,8 @@ class GetData {
 
 public class Student {
 
-	// This method is of uses for class GetData
+	// This method is for use of class GetData
 	public static void main(String[] args) {
-
 		GetData data = new GetData();
 
 		// For set data
@@ -54,9 +53,9 @@ public class Student {
 		data.setName("Neel");
 		data.setAge(21);
 
-		System.out.println("Student name : " + data.getName());
+		System.out.println("Student name: " + data.getName());
 		System.out.println("Student roll number: " + data.getRollNumber());
-		System.out.println("Student age : " + data.getAge());
+		System.out.println("Student age: " + data.getAge());
 	}
 
 }

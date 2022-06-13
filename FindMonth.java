@@ -22,10 +22,10 @@ public class FindMonth {
 
 		int choise;
 		Scanner scanner = new Scanner(System.in);
-		try { // This try block is for handle exception
-			System.out.println("Enter your choose : ");
-			choise = scanner.nextInt();// This variable is for switch case
-		} finally { // This finally block Handle finally clause
+		try {
+			System.out.println("Enter your choose: ");
+			choise = scanner.nextInt(); // This variable is for switch case
+		} finally {
 			scanner.close();
 		}
 
@@ -33,51 +33,51 @@ public class FindMonth {
 			case 1: {
 				System.out.println("Current month is January.");
 				break;
-			} // End of case 1
+			}
 			case 2: {
 				System.out.println("Current month is February.");
 				break;
-			} // End of case 2
+			}
 			case 3: {
 				System.out.println("Current month is March.");
 				break;
-			} // End of case 3
+			}
 			case 4: {
 				System.out.println("Current month is April.");
 				break;
-			} // End of case 4
+			}
 			case 5: {
 				System.out.println("Current month is May.");
 				break;
-			} // End of case 5
+			}
 			case 6: {
 				System.out.println("Current month is June.");
 				break;
-			} // End of case 6
+			}
 			case 7: {
 				System.out.println("Current month is July.");
 				break;
-			} // End of case 7
+			}
 			case 8: {
 				System.out.println("Current month is August.");
 				break;
-			} // End of case 8
+			}
 			case 9: {
 				System.out.println("Current month is September.");
 				break;
-			} // End of case 9
+			}
 			case 10: {
 				System.out.println("Current month is October.");
 				break;
-			} // End of case 10
+			}
 			case 11: {
 				System.out.println("Current month is November.");
 				break;
-			} // End of case 11
+			}
 			case 12: {
 				System.out.println("Current month is December.");
 				break;
-			} // End of case 12
+			}
 			default:
 				System.out.println("Entered choise " + choise + " is not valid.");
 		}

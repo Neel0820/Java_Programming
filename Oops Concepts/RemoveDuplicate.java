@@ -1,7 +1,6 @@
 package oopsconcept;
 
 import java.util.ArrayList;
-import java.util.List;
 import java.util.stream.Collectors;
 
 /**
@@ -30,12 +29,12 @@ public class RemoveDuplicate {
 		list.add("E");
 		list.add("E");
 
-		System.out.println("All value in list : " + list);
+		System.out.println("All value in list: " + list);
 
 		// For remove duplicate value
-		List<String> listWithoutDuplicates = list.stream().distinct().collect(Collectors.toList());
+		list = (ArrayList<String>) list.stream().distinct().collect(Collectors.toList());
 
-		System.out.println("List after duplicate value removal : " + listWithoutDuplicates);
+		System.out.println("List after duplicate value removal: " + list);
 	}
 
 }

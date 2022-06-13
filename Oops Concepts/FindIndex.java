@@ -12,19 +12,19 @@ public class FindIndex {
 	public static void main(String[] args) {
 		int[] list = new int[10];
 
-		System.out.println("Enetr the element of array : ");
+		System.out.println("Enetr the element of array: ");
 		Scanner scanner = new Scanner(System.in);
 
 		int element;
 
-		try { // This try block is for handle exception
-		for (int i = 0; i < 10; i++) {
-			list[i] = scanner.nextInt();
-		}
+		try {
+			for (int i = 0; i < 10; i++) {
+				list[i] = scanner.nextInt();
+			}
 
-		System.out.println("Enter element which index find : ");
-		element = scanner.nextInt();
-		} finally { // This finally block Handle finally clause
+			System.out.println("Enter element which index find: ");
+			element = scanner.nextInt();
+		} finally {
 			scanner.close();
 		}
 
@@ -36,7 +36,7 @@ public class FindIndex {
 		}
 		if (flag >= 0 && flag < 10) { // If for check the value of flag
 			System.out.println("enterd element's index is " + flag);
-		}else { // Else for main if
+		} else {
 			System.out.println("enterd element is not contain in array.");
 		}
 	}

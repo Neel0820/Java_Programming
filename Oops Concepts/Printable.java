@@ -9,7 +9,7 @@ package oopsconcept;
 interface Triangle {
 
 	// This is abstract method define in interface
-	void fingArea(double hight, double base);
+	void fingArea(double height, double base);
 
 }
 
@@ -19,9 +19,9 @@ class AreaOfTriangle implements Triangle {
 	 * This method is for
 	 * find the area of triangle
 	 */
-	public void fingArea(double hight, double base) {
-		double area = ((hight * base) / 2);
-		System.out.println("Area of given triangle : " + area);
+	public void fingArea(double height, double base) {
+		double area = ((height * base) / 2);
+		System.out.println("Area of given triangle: " + area);
 	}
 
 }

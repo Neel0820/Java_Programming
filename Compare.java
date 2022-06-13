@@ -19,20 +19,20 @@ public class Compare {
 		Integer secondNumber;
 
 		Scanner scanner = new Scanner(System.in);
-		try { // This try block is for handle exception
-			System.out.println("Enter value of first number : ");
+		try {
+			System.out.println("Enter value of first number: ");
 			firstNumber = scanner.nextInt(); // Get input for firstNumber
 
-			System.out.println("Enter value of second number : ");
+			System.out.println("Enter value of second number: ");
 			secondNumber = scanner.nextInt(); // Get input for secondNumber
-		} finally { // This block is handle finally clause
+		} finally {
 			scanner.close();
 		}
 
-		if (firstNumber.equals(secondNumber)) { // Main if
-			System.out.println("Given numbers are equal ");
-		} else { // Main else
-			System.out.println("Given numbers are different");
+		if (firstNumber.equals(secondNumber)) {
+			System.out.println("Given numbers are equal.");
+		} else {
+			System.out.println("Given numbers are different.");
 		}
 	}
 

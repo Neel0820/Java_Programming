@@ -15,9 +15,9 @@ public class SetValue {
 	 * get value of firstNumber and coefficientNumber
 	 */
 	static void display(int thirdNumber) {
-		System.out.println("First number : " + firstNumber);
-		System.out.println("Second number : " + secondNumber);
-		System.out.println("Thied number : " + thirdNumber);
+		System.out.println("First number: " + firstNumber);
+		System.out.println("Second number: " + secondNumber);
+		System.out.println("Thied number: " + thirdNumber);
 	}
 
 	/*
@@ -28,7 +28,7 @@ public class SetValue {
 		secondNumber = firstNumber + 2;
 	}
 
-	// This main method is for uses of display method
+	// This main method is for use of display(int) method
 	public static void main(String[] args) {
 		display(23);
 	}

@@ -23,11 +23,11 @@ public class Set {
 		set.add("world");
 		set.add("Neel");
 
-		// Use iterator method for print set
+		// Use iterator method
 		Iterator<String> iterator = set.iterator();
 
-		while (iterator.hasNext()) { // While loop for print all element of set
-			System.out.println("Set element : " + iterator.next());
+		while (iterator.hasNext()) { // While loop for print set
+			System.out.println("Set element: " + iterator.next());
 		}
 	}
 

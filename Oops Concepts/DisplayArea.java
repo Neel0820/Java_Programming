@@ -26,13 +26,13 @@ class FindArea extends Area{
 		final double pi = 3.14;
 
 		double area = (pi * radius * radius);
-		System.out.println("Area of circle : " + area);
+		System.out.println("Area of circle: " + area);
 	}
 
 	// This method is for find the area of rectangle
 	public void findArea(double length, double width) {
 		double area = (length * width);
-		System.out.println("Area of rectangle : " + area);
+		System.out.println("Area of rectangle: " + area);
 	}
 
 }

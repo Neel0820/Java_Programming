@@ -23,11 +23,11 @@ public class List {
 		list.add("world");
 		list.add("Neel");
 
-		// Use iterator method for print list
+		// Use iterator method
 		Iterator<String> iterator = list.iterator();
 
-		while (iterator.hasNext()) { // While loop for print all element of list
-			System.out.println("List element : " + iterator.next());
+		while (iterator.hasNext()) { // While loop for print list
+			System.out.println("List element: " + iterator.next());
 		}
 	}
 

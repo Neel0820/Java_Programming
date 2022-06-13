@@ -18,20 +18,20 @@ abstract class Method {
 	public void getValue() {
 		Scanner scanner = new Scanner(System.in);
 
-		try { // This try block is for handle exception
-		System.out.println("Enter the value of first variable : ");
-		firstNumber = scanner.nextInt(); // This is for get value for firstNumber
-
-		System.out.println("Enter the value of second variable : ");
-		secondNumber = scanner.nextInt(); // This is for get value for secondNumber
-		} finally { // This finally block Handle finally clause
+		try {
+			System.out.println("Enter the value of first variable: ");
+			firstNumber = scanner.nextInt(); // This is for get value for firstNumber
+	
+			System.out.println("Enter the value of second variable: ");
+			secondNumber = scanner.nextInt(); // This is for get value for secondNumber
+		} finally {
 			scanner.close();
 		}
 	}
 
 }
 
-// Extends the Method class
+// Extends a Method class
 class Addition extends Method {
 
 	/*
@@ -41,12 +41,12 @@ class Addition extends Method {
 	@Override
 	void calculate() {
 		int result = firstNumber + secondNumber;
-		System.out.println("Addition of both number : " + result);
+		System.out.println("Addition of both number: " + result);
 	}
 
 }
 
-// Extends the Method class
+// Extends a Method class
 class Subtraction extends Method {
 
 	/*
@@ -56,7 +56,7 @@ class Subtraction extends Method {
 	@Override
 	void calculate() {
 		int result = firstNumber - secondNumber;
-		System.out.println("Subtraction of both number : " + result);
+		System.out.println("Subtraction of both number: " + result);
 	}
 
 }

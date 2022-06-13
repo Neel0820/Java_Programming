@@ -18,7 +18,7 @@ class Movie implements Comparable<Movie> {
 
 	// Used to sort movies by year
 	public int compareTo(Movie movie) {
-		return this.year - movie.year;
+		return year - movie.year;
 	}
 
 	// Constructor
@@ -28,7 +28,7 @@ class Movie implements Comparable<Movie> {
 		this.year = year;
 	}
 
-	// Getter methods for accessing private data
+	// Getter methods for accessing private variable
 	public double getRating() {
 		return rating;
 	}
@@ -50,8 +50,7 @@ class RatingCompare implements Comparator<Movie> {
 		}
 		if (movie1.getRating() > movie2.getRating()) {
 			return 1;
-		}
-		else {
+		} else {
 			return 0;
 		}
 	}
@@ -89,7 +88,7 @@ public class MovieComaprison {
 		Collections.sort(list, ratingCompare);
 
 		for (Movie movie : list) {
-			System.out.println(movie.getRating() + " " + movie.getName() + " " + movie.getYear());			
+			System.out.println(movie.getRating() + " " + movie.getName() + " " + movie.getYear());
 		}
 
 		// In this section use sort method to Sort by name
@@ -106,7 +105,7 @@ public class MovieComaprison {
 		Collections.sort(list);
 
 		for (Movie movie : list) {
-			System.out.println(movie.getYear() + " " + movie.getRating() + " " + movie.getName()+" ");
+			System.out.println(movie.getYear() + " " + movie.getRating() + " " + movie.getName() + " ");
 		}
 	}
 

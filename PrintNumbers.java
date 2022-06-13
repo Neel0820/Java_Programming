@@ -14,7 +14,7 @@ public class PrintNumbers {
 	 */
 	public static void main(String[] args) {
 		int i = 1;
-		do { // Do statement for execute condition
+		do { // Do statement for print
 			System.out.println(+ i);
 			i++;
 		} while (i <= 10); // While statement for check condition

@@ -15,20 +15,20 @@ class Number {
 	public void getValue() {
 		Scanner scanner = new Scanner(System.in);
 
-		try { // This try block is for handle exception
-		System.out.println("Enter the value of first variable : ");
+		try {
+		System.out.println("Enter the value of first variable: ");
 		firstNumber = scanner.nextInt(); // This is for get value for firstNumber
 
-		System.out.println("Enter the value of second variable : ");
+		System.out.println("Enter the value of second variable: ");
 		secondNumber = scanner.nextInt(); // This is for get value for secondNumber
-		} finally { // This finally block Handle finally clause
+		} finally {
 			scanner.close();
 		}
 	}
 
 }
 
-// Extends the Number class
+// Extends a Number class
 class Multipliction extends Number {
 
 	/*
@@ -37,12 +37,12 @@ class Multipliction extends Number {
 	 */
 	public void calculate() {
 		int result = firstNumber * secondNumber;
-		System.out.println("Multipliction of both number : " + result);
+		System.out.println("Multipliction of both number: " + result);
 	}
 
 }
 
-// Extends the Number class
+// Extends a Number class
 class Division extends Number {
 
 	/*
@@ -55,12 +55,12 @@ class Division extends Number {
 
 }
 
-// Extends the Division class
+// Extends a Division class
 class Display extends Division {
 
 	// This method is for display the result of division
 	public void display() {
-		System.out.println("Division of both number : " + calculate());
+		System.out.println("Division of both number: " + calculate());
 	}
 
 }

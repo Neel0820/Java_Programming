@@ -24,12 +24,12 @@ public class Map {
 		map.put(2, "world");
 		map.put(3, "Neel");
 
-		// Use iterator method for print map
+		// Use iterator method
 		Iterator<Entry<Integer, String>> iterator = map.entrySet().iterator();
 
-		while (iterator.hasNext()) { // While loop for print all element of list
+		while (iterator.hasNext()) { // While loop for print map
 			Entry<Integer, String> entry = iterator.next();
-			System.out.println("Map element : Key - " + entry.getKey() + " Value - " + entry.getValue());
+			System.out.println("Map element: Key- " + entry.getKey() + " Value- " + entry.getValue());
 		}
 	}
 
