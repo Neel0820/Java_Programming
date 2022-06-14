@@ -51,7 +51,7 @@ class Subtraction extends Method {
 
 	/*
 	 * This method is implemented by parent class
-	 * for Subtraction of two number
+	 * for subtraction of two number
 	 */
 	@Override
 	void calculate() {
@@ -63,7 +63,7 @@ class Subtraction extends Method {
 
 public class Calculation {
 
-	// This method is of uses for calculate
+	// This method is for use of calculate() method
 	public static void main(String[] args) {
 		Method addition = new Addition();
 		addition.getValue();

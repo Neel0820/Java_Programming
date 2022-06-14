@@ -3,7 +3,7 @@ package corejava;
 import java.util.Scanner;
 
 /**
- * This program implement an application
+ * This program is for
  * to find the Month
  * @author macbook
  */
@@ -20,16 +20,16 @@ public class FindMonth {
 				+ "\nFor August press 8,\nFor September press 9,\nFor October press 10,"
 				+ "\nFor November press 11,\nFor December press 12.\n");
 
-		int choise;
+		int choice;
 		Scanner scanner = new Scanner(System.in);
 		try {
 			System.out.println("Enter your choose: ");
-			choise = scanner.nextInt(); // This variable is for switch case
+			choice = scanner.nextInt(); // Get value of variable choice is for switch case
 		} finally {
 			scanner.close();
 		}
 
-		switch (choise) {
+		switch (choice) {
 			case 1: {
 				System.out.println("Current month is January.");
 				break;
@@ -79,7 +79,7 @@ public class FindMonth {
 				break;
 			}
 			default:
-				System.out.println("Entered choise " + choise + " is not valid.");
+				System.out.println("Entered choice " + choice + " is not valid.");
 		}
 	}
 

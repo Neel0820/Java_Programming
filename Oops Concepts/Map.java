@@ -13,7 +13,7 @@ public class Map {
 
 	/*
 	 * This method is for
-	 * print all data stored in map type of HashMap
+	 * print all data stored in map
 	 * using iterator
 	 */
 	public static void main(String[] args) {
@@ -27,7 +27,7 @@ public class Map {
 		// Use iterator method
 		Iterator<Entry<Integer, String>> iterator = map.entrySet().iterator();
 
-		while (iterator.hasNext()) { // While loop for print map
+		while (iterator.hasNext()) {
 			Entry<Integer, String> entry = iterator.next();
 			System.out.println("Map element: Key- " + entry.getKey() + " Value- " + entry.getValue());
 		}

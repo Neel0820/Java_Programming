@@ -26,7 +26,7 @@ public class List {
 		// Use iterator method
 		Iterator<String> iterator = list.iterator();
 
-		while (iterator.hasNext()) { // While loop for print list
+		while (iterator.hasNext()) {
 			System.out.println("List element: " + iterator.next());
 		}
 	}

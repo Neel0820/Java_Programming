@@ -8,16 +8,16 @@ package corejava;
 public class PrintNumbers {
 
 	/*
-	 * This method for
+	 * This method is for
 	 * print 1 to 10 number
-	 * using do while
+	 * using do while loop
 	 */
 	public static void main(String[] args) {
 		int i = 1;
-		do { // Do statement for print
+		do {
 			System.out.println(+ i);
 			i++;
-		} while (i <= 10); // While statement for check condition
+		} while (i <= 10);
 	}
 
 }

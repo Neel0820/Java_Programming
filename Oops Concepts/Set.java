@@ -12,7 +12,7 @@ public class Set {
 
 	/*
 	 * This method is for
-	 * print all data stored in set type of HashSet
+	 * print all data stored in set
 	 * using iterator
 	 */
 	public static void main(String[] args) {
@@ -26,7 +26,7 @@ public class Set {
 		// Use iterator method
 		Iterator<String> iterator = set.iterator();
 
-		while (iterator.hasNext()) { // While loop for print set
+		while (iterator.hasNext()) {
 			System.out.println("Set element: " + iterator.next());
 		}
 	}

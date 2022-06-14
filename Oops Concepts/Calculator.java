@@ -3,7 +3,8 @@ package oopsconcept;
 import java.util.Scanner;
 
 /**
- * This class is for get the value using scanner
+ * This program is for
+ * get the value of multiplication and division
  * @author macbook
  */
 class Number {
@@ -29,15 +30,12 @@ class Number {
 }
 
 // Extends a Number class
-class Multipliction extends Number {
+class Multiplication extends Number {
 
-	/*
-	 * This method is implemented by parent class
-	 * for addition of two number
-	 */
+	// This method is for multiplication of two number
 	public void calculate() {
 		int result = firstNumber * secondNumber;
-		System.out.println("Multipliction of both number: " + result);
+		System.out.println("Multiplication of both number: " + result);
 	}
 
 }
@@ -45,10 +43,7 @@ class Multipliction extends Number {
 // Extends a Number class
 class Division extends Number {
 
-	/*
-	 * This method is implemented by parent class
-	 * for Subtraction of two number
-	 */
+	// This method is for division of two number
 	public float calculate() {
 		return ((float) firstNumber / secondNumber);
 	}
@@ -67,9 +62,9 @@ class Display extends Division {
 
 public class Calculator {
 
-	// This method is of uses for calculate
+	// This method is for use of Number, Multiplication, Division and Display classes
 	public static void main(String[] args) {
-		Multipliction multiplication = new Multipliction();
+		Multiplication multiplication = new Multiplication();
 		multiplication.getValue();
 		multiplication.calculate();
 		Display display = new Display();

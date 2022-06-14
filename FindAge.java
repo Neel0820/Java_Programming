@@ -10,7 +10,7 @@ public class FindAge {
 
 	/*
 	 * This method is for find the age
-	 * Here one @param for define age
+	 * Here one parameter is for define age
 	 */
 	public void findAge(int age) {
 		int ageLimit = 50;

@@ -11,8 +11,8 @@ public class Compare {
 
 	/*
 	 * This method is for
-	 * compare two wrapper class value
-	 * using wrapper classes
+	 * compare two value
+	 * using wrapper class
 	 */
 	public static void main(String[] args) {
 		Integer firstNumber;

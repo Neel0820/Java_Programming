@@ -12,7 +12,7 @@ public class SetValue {
 
 	/*
 	 * This static method is for
-	 * get value of firstNumber and coefficientNumber
+	 * print value of firstNumber, secondNumber and thirdNumber
 	 */
 	static void display(int thirdNumber) {
 		System.out.println("First number: " + firstNumber);

@@ -17,14 +17,14 @@ public class StringOperation {
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
 		System.out.println("Enter String: ");
-		String myString = scanner.nextLine(); // Get value of myString
+		String myString = scanner.nextLine(); // Get value for myString
 
 		String concatString;
 		int position;
 
 		try {
 			System.out.println("Enter string you concatenate with" + myString + ": ");
-			concatString = scanner.nextLine(); // Get value of concatString
+			concatString = scanner.nextLine(); // Get value for concatString
 
 			// This is for concatenate two string
 			System.out.println("String after concatenate: " + myString.concat(concatString));

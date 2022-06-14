@@ -14,7 +14,7 @@ abstract class Area {
 	abstract void findArea(double radius);
 }
 
-// Extends the Area class
+// Extends a Area class
 class FindArea extends Area{
 
 	/*
@@ -39,7 +39,7 @@ class FindArea extends Area{
 
 public class DisplayArea {
 
-	// This is main method uses for findArea()
+	// This is main method uses for findArea() method
 	public static void main(String[] args) {
 		FindArea area = new FindArea();
 		area.findArea(5);
