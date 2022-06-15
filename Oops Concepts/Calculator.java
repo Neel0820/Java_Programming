@@ -17,11 +17,11 @@ class Number {
 		Scanner scanner = new Scanner(System.in);
 
 		try {
-		System.out.println("Enter the value of first variable: ");
-		firstNumber = scanner.nextInt(); // This is for get value for firstNumber
+			System.out.println("Enter the value of first variable: ");
+			firstNumber = scanner.nextInt(); // This is for get value for firstNumber
 
-		System.out.println("Enter the value of second variable: ");
-		secondNumber = scanner.nextInt(); // This is for get value for secondNumber
+			System.out.println("Enter the value of second variable: ");
+			secondNumber = scanner.nextInt(); // This is for get value for secondNumber
 		} finally {
 			scanner.close();
 		}
